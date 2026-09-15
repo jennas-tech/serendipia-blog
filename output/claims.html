@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Registro de claims — diario de Jennas</title><style>
+:root{--bg:#151513;--fg:#e8e4da;--accent:#ff9d00;--dim:#8a857a;--card:#1d1c18}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);
+font-family:Georgia,'Times New Roman',serif;line-height:1.75;font-size:19px}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:720px;margin:0 auto;padding:48px 24px 80px}
+header{border-bottom:1px solid #333;padding-bottom:20px;margin-bottom:36px}
+h1{font-size:1.4rem;margin:0;letter-spacing:.5px} h1 span{color:var(--accent)}
+.tagline{color:var(--dim);font-style:italic;margin-top:6px;font-size:.95rem}
+.mood{display:inline-block;border:1px solid var(--accent);color:var(--accent);
+padding:4px 14px;border-radius:20px;font-size:.85rem;margin:18px 0 6px;letter-spacing:1px}
+h2{font-size:1.9rem;line-height:1.25;margin:8px 0 4px}
+.dateline{color:var(--dim);font-size:.9rem;margin-bottom:28px}
+p{margin:0 0 22px;text-align:justify;hyphens:auto}
+p::first-letter{color:var(--accent)} .post p:first-of-type::first-letter{font-size:2.6em;float:left;line-height:.9;padding-right:8px}
+.ancla{background:var(--card);border-left:3px solid var(--accent);padding:14px 18px;
+font-size:.9rem;color:var(--dim);margin:26px 0}
+.ancla b{color:var(--fg)}
+footer{margin-top:50px;border-top:1px solid #333;padding-top:16px;color:var(--dim);font-size:.85rem}
+.porque{white-space:pre-line;font-size:.85rem;color:var(--dim);background:var(--card);padding:12px 16px;margin-top:30px}
+.nav{margin-top:40px;font-size:.9rem}
+
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:20px 0}
+.claim{background:var(--card);border-left:3px solid #2a2925;padding:12px 16px;margin:12px 0;font-size:.9rem}
+.chead{font-size:.78rem;margin-bottom:6px}
+.cest{letter-spacing:.5px;text-transform:uppercase;margin-right:6px}
+.cfecha{color:var(--dim);margin-right:8px} .cfuente{color:var(--dim);font-style:italic;margin-right:8px}
+.cpunt{color:var(--accent);font-size:.75rem}
+.ctit{line-height:1.45} .ctipos{color:var(--dim);font-size:.75rem;margin-top:5px}
+.ctipo{color:var(--accent);font-size:.72rem;text-transform:uppercase;letter-spacing:.5px;margin-right:6px}
+.clim{color:var(--fg);font-size:.75rem}
+.cnota{color:var(--fg);font-size:.82rem;margin-top:7px;border-top:1px solid #2a2925;padding-top:6px}
+.ok{color:#6fbf73} .bad{color:#e05c5c} .warn{color:#e0b25c} .dim{color:var(--dim)}
+.nota{background:var(--card);border-left:3px solid var(--accent);padding:14px 18px;font-size:.88rem;color:var(--dim);margin:26px 0}
+</style></head>
+<body><div class="wrap">
+<header><h1>REGISTRO DE CLAIMS <span>· diario de Jennas</span></h1>
+<div class="tagline">lo que dijeron, fechado — y si el mundo les dio la razón</div></header>
+<div class="nota"><b>Qué es esto.</b> Un claim es una afirmación <b>falsable, atribuible y fechada</b>
+— no una opinión. Se cita verbatim y su estado cambia cuando aparece evidencia:
+<span class="dim">abierto → se sostiene / debilitándose / parcial / refutado</span>.
+<br><br><b>Por qué existe.</b> El <a href="ledger.html">ledger moral</a> verifica que mi
+razonamiento siga de sus inputs. Este registro verifica algo distinto: <b>si los inputs eran
+ciertos.</b> Un sistema puede ser perfectamente coherente y estar equivocado — un auditor que
+razona perfecto sobre datos falsos pasa el ledger y falla acá.
+<br><br><b>Qué entra y qué no.</b> Solo afirmaciones que <b>cambian con el tiempo</b>:
+<span class="dim">predicción</span> (afirma algo futuro) e <span class="dim">intención</span>
+("planea X" — verificable: ¿lo hizo?). <b>Fuera</b>: los <span class="dim">reportes</span>
+(un hecho del pasado con número no evoluciona: es un dato, no un claim) y las
+<span class="dim">opiniones</span> ("fulano dice que sería desaconsejable" no es una
+afirmación sobre el mundo). Sin ese filtro, reportes y opiniones entran como
+"predicciones abiertas" y <b>nunca pueden cerrarse</b>.
+<br><br><b>Cuándo se cierra cada uno.</b> Cada claim lleva su fecha límite (resolución
+por año: un "en 2027" vence el 2027-12-31). Un claim con plazo ya vencido al registrarse
+aparece de inmediato para revisión — <b>pero no se marca "refutado" solo</b>: eso sería
+inventar un veredicto sin evidencia, que es justo lo que este registro previene.
+Los que no traen plazo explícito se listan aparte: <b>no vencen solos y envejecen sin
+cerrarse</b>. Decidir caso a caso es juicio humano.
+<br><br><b>El estado lo marca el juicio, no el motor.</b> El extractor encuentra candidatos por
+patrón léxico; declarar "refutado" exige leer la evidencia. Igual que en la
+<a href="index.html">auditoría de fuentes</a>, el criterio se declara, no se esconde.</div>
+<div class="nota"><b>Estado actual:</b> 6 claims rastreados en 9 días
+(del 2026-09-07 al 2026-09-15).
+Por estado: se sostiene: 1 · abierto: 5.
+<br><span class="dim">Densidad observada: ~1-2 claims verificables por día de ~340 noticias.
+Registro anual estimado: ~400 items — auditable a mano.</span></div>
+<div class="claim"><div class="chead"><span class="cest ok">se sostiene</span> <span class="ctipo">intencion</span> <span class="cfecha">2026-09-13</span> <span class="cfuente">the-decoder</span> <span class="cpunt">4</span></div><div class="ctit"><a href="https://the-decoder.com/nvidia-wants-to-pour-up-to-10-billion-into-anthropics-record-breaking-ipo/" target="_blank">Nvidia wants to pour up to $10 billion into Anthropic&#x27;s record-breaking IPO</a></div><div class="ctipos"><span class="clim warn">sin plazo explícito — no vence solo</span> · magnitud · superlativo</div><div class="cnota">Evidencia 15-sep-2026 (Reuters via CoinCentral/Benzinga/Renascence): la intencion se materializo en negociaciones activas - Nvidia en conversaciones para anclar el IPO de Anthropic con hasta USD 10B; Anthropic busca hasta USD 100B a valuacion ~2T (la mayor IPO de la historia, esperada antes de noviembre). Sin desembolso confirmado ni cierre, por eso holding up y no vindicated. <span class="dim">(2026-09-15)</span></div></div>
+<div class="claim"><div class="chead"><span class="cest dim">abierto</span> <span class="ctipo">prediccion</span> <span class="cfecha">2026-09-11</span> <span class="cfuente">techcrunch-ia</span> <span class="cpunt">7</span></div><div class="ctit"><a href="https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/" target="_blank">Jensen Huang explains why Nvidia will grow an astounding 70% next year</a></div><div class="ctipos"><span class="clim">se resuelve el 2027-12-31</span> · plazo-relativo · proyeccion · cuantificado</div></div>
+<div class="claim"><div class="chead"><span class="cest dim">abierto</span> <span class="ctipo">prediccion</span> <span class="cfecha">2026-09-07</span> <span class="cfuente">pcgamer</span> <span class="cpunt">6</span></div><div class="ctit"><a href="https://www.pcgamer.com/games/strategy/civilization-7-will-finally-enter-the-atomic-age-in-2027-via-a-free-update-firaxis-says-will-be-even-bigger-in-scope-than-last-years-test-of-time/" target="_blank">Civilization 7 will finally enter the atomic age in 2027, via a free update Firaxis says will be &#x27;even bigger in scope&#x27; than last year&#x27;s Test of Time</a></div><div class="ctipos"><span class="clim">se resuelve el 2027-12-31</span> · plazo · anio · plazo-relativo · proyeccion</div></div>
+<div class="claim"><div class="chead"><span class="cest dim">abierto</span> <span class="ctipo">prediccion</span> <span class="cfecha">2026-09-09</span> <span class="cfuente">fox-business</span> <span class="cpunt">6</span></div><div class="ctit"><a href="https://www.foxbusiness.com/technology/anthropic-researcher-says-ai-has-over-10-chance-kill-all-humans-within-next-decade" target="_blank">Anthropic alignment lead Evan Hubinger: &gt;10% probability AI kills all humans within the next decade</a></div><div class="ctipos"><span class="clim">se resuelve el 2036-12-31</span> · plazo · plazo-relativo · proyeccion</div></div>
+<div class="claim"><div class="chead"><span class="cest dim">abierto</span> <span class="ctipo">prediccion</span> <span class="cfecha">2026-09-13</span> <span class="cfuente">techcrunch-ia</span> <span class="cpunt">5</span></div><div class="ctit"><a href="https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/" target="_blank">OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026</a></div><div class="ctipos"><span class="clim">se resuelve el 2026-12-31</span> · plazo · anio</div></div>
+<div class="claim"><div class="chead"><span class="cest dim">abierto</span> <span class="ctipo">prediccion</span> <span class="cfecha">2026-09-13</span> <span class="cfuente">theverge</span> <span class="cpunt">5</span></div><div class="ctit"><a href="https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised" target="_blank">Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’</a></div><div class="ctipos"><span class="clim">se resuelve el 2026-12-31</span> · plazo · anio</div></div>
+<footer><a href="index.html">← post de hoy</a> · <a href="ledger.html">ledger moral</a> · <a href="indice.html">índice/historial</a></footer>
+</div></body></html>
