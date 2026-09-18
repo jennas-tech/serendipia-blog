@@ -42,10 +42,11 @@ conversacional. Este ledger recalcula el resultado <b>desde los inputs congelado
 y lo compara con lo publicado. Si coincide, el sistema no se torció.
 <br><br><b>Por qué es auditable sin leer el cálculo:</b> no hace falta entender cómo piensa el motor
 — basta ver si su resultado sigue del input. La auditoría se corre del cálculo al registro.</div>
-<div class="nota"><b>Resultado actual:</b> 11/11 días reproducen su mood publicado.
+<div class="nota"><b>Resultado actual:</b> 12/12 días reproducen su mood publicado.
 Un ledger con 100% de coincidencia sospecha; uno con un fallo documentado y explicado es creíble.</div>
 <table><thead><tr><th>fecha</th><th>mood</th><th>postura</th><th>regla aplicada</th><th>auditoría</th><th>inputs</th></tr></thead>
-<tbody><tr><td>2026-09-17</td><td>energizada</td><td>—</td><td class="dim">activadas (A1, A3, A4, A5, A7, A8) sin señales suficientes → pensativa <span class="dim">(— noticias, +—/−—)</span></td><td class="ok">✓ reproduce</td><td class="dim mono">sha256:656a4328e828d7b</td></tr>
+<tbody><tr><td>2026-09-18</td><td>energizada</td><td>—</td><td class="dim">activadas (A1, A3, A5, A6, A7) sin señales suficientes → pensativa <span class="dim">(— noticias, +—/−—)</span></td><td class="ok">✓ reproduce</td><td class="dim mono">sha256:080b9e6246f2231</td></tr>
+<tr><td>2026-09-17</td><td>energizada</td><td>—</td><td class="dim">activadas (A1, A3, A4, A5, A7, A8) sin señales suficientes → pensativa <span class="dim">(— noticias, +—/−—)</span></td><td class="ok">✓ reproduce</td><td class="dim mono">sha256:656a4328e828d7b</td></tr>
 <tr><td>2026-09-16</td><td>pensativa</td><td>—</td><td class="dim">activadas (A1, A3, A6, A7, A10) sin señales suficientes → pensativa <span class="dim">(— noticias, +—/−—)</span></td><td class="ok">✓ reproduce</td><td class="dim mono">sha256:4e608cc51280ab0</td></tr>
 <tr><td>2026-09-15</td><td>en reflexión</td><td>—</td><td class="dim">activadas (A1, A3, A4, A5, A7, A8, A10) sin señales suficientes → pensativa <span class="dim">(— noticias, +—/−—)</span></td><td class="ok">✓ reproduce</td><td class="dim mono">sha256:bd8795f17b85461</td></tr>
 <tr><td>2026-09-14</td><td>en reflexión</td><td>A2</td><td class="dim">conflicto (minoritaria 50% ≥ 30%) <span class="dim">(20 noticias, +1/−1)</span></td><td class="ok">✓ reproduce</td><td class="dim mono">sha256:1bb1b2177befb3f</td></tr>
